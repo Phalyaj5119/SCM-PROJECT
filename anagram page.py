@@ -16,9 +16,201 @@ print("                                                   GOOD LUCK!!!")
 cho=input("ENTER UR OPTION: ")
 print("")
 if cho=='easy':
-    print("yes")    
+    l1 = ['lud', 'del', 'led', 'eld', 'use', 'sue', 'sel', 'leu', 'lsd', 'els', 'LUD', 'DEL', 'LED', 'ELD', 'USE',
+          'SUE', 'SEL', 'LEU', 'LSD', 'ELS']
+    l2 = ['duel', 'leud', 'lude', 'luds', 'dels', 'deus', 'dues', 'elds', 'lues', 'seul', 'sled', 'slue', 'sued',
+          'used', 'DUEL', 'LEUD', 'LUDE', 'LUDS', 'DELS', 'DEUS', 'DUES', 'ELDS', 'LUES', 'SEUL', 'SLED', 'SLED',
+          'SUED', 'USED']
+    l3 = ['duels', 'dulse', 'leuds', 'ludes', 'slued', 'DUELS', 'DULSE', 'LEUDS', 'LUDES', 'SLUED']
+    print("                                              PLAYER 1")
+    print("                                             S/L/E/D/U")
+    sum = 0
+    print("THREE LETTER WORDS ONLY!")
+    for i in range(3):
+        val = str(input("enter ur word: "))
+        if val in l1:
+            sum += 100
+            print("your score is: %d" % sum)
+            l1.remove(val)
+        else:
+            print("INVALID")
+    print(" ")
+    print("FINAL SCORE:%d" % sum)
+    print("")
+    print("                                             S/L/E/D/U")
+    print("FOUR LETTER WORDS ONLY!")
+    sum1 = 0
+    for i in range(3):
+        val1 = str(input("enter ur word: "))
+        if val1 in l2:
+            sum1 += 200
+            print("your score is: %d" % sum1)
+            l2.remove(val1)
+        else:
+            print("INVALID")
+    print(" ")
+    print("FINAL SCORE:%d" % sum1)
+    print("")
+    print("                                             S/L/E/D/U")
+    print("FIVE LETTER WORDS ONLY!")
+    sum2 = 0
+    for i in range(3):
+        val2 = str(input("enter ur word: "))
+        if val2 in l3:
+            sum2 += 400
+            print("your score is: %d" % sum2)
+            l3.remove(val2)
+        else:
+            print("INVALID")
+    print(" ")
+    print("FINAL SCORE:%d" % sum2)
+    sum3 = sum + sum1 + sum2
+
+    print("                               FINAL SCORE FOR PLAYER1: %d" % sum3)
+    print(" ")
+    print("                                              PLAYER 2")
+    print("                                             S/L/E/D/U")
+    sum4 = 0
+    print("THREE LETTER WORDS ONLY!")
+    for i in range(3):
+        val3 = str(input("enter ur word: "))
+        if val3 in l1:
+            sum4 += 100
+            print("your score is: %d" % sum4)
+            l1.remove(val3)
+        else:
+            print("INVALID OR ALREADY USED BY PLAYER 1")
+    print(" ")
+    print("FINAL SCORE:%d" % sum4)
+    print("")
+    print("                                             S/L/E/D/U")
+    print("FOUR LETTER WORDS ONLY!")
+    sum5 = 0
+    for i in range(3):
+        val4 = str(input("enter ur word: "))
+        if val4 in l2:
+            sum5 += 200
+            print("your score is: %d" % sum5)
+            l2.remove(val4)
+        else:
+            print("INVALID OR ALREADY USED BY PLAYER 1")
+    print(" ")
+    print("FINAL SCORE:%d" % sum5)
+    print("")
+    print("                                             S/L/E/D/U")
+    print("FIVE LETTER WORDS ONLY!")
+    sum6 = 0
+    for i in range(2):
+        val5 = str(input("enter ur word: "))
+        if val5 in l3:
+            sum6 += 400
+            print("your score is: %d" % sum6)
+            l3.remove(val5)
+        else:
+            print("INVALID OR ALREADY USED BY PLAYER 1")
+    print(" ")
+    print("FINAL SCORE:%d" % sum6)
+    sum7 = sum5 + sum6 + sum4
+
+    print("                               FINAL SCORE FOR PLAYER1: %d" % sum7)
 elif cho=='EASY':
-    print("yes1")    
+    l1 = ['lud', 'del', 'led', 'eld', 'use', 'sue', 'sel', 'leu', 'lsd', 'els', 'LUD', 'DEL', 'LED', 'ELD', 'USE',
+          'SUE', 'SEL', 'LEU', 'LSD', 'ELS']
+    l2 = ['duel', 'leud', 'lude', 'luds', 'dels', 'deus', 'dues', 'elds', 'lues', 'seul', 'sled', 'slue', 'sued',
+          'used', 'DUEL', 'LEUD', 'LUDE', 'LUDS', 'DELS', 'DEUS', 'DUES', 'ELDS', 'LUES', 'SEUL', 'SLED', 'SLED',
+          'SUED', 'USED']
+    l3 = ['duels', 'dulse', 'leuds', 'ludes', 'slued', 'DUELS', 'DULSE', 'LEUDS', 'LUDES', 'SLUED']
+    print("                                              PLAYER 1")
+    print("                                             S/L/E/D/U")
+    sum = 0
+    print("THREE LETTER WORDS ONLY!")
+    for i in range(3):
+        val = str(input("enter ur word: "))
+        if val in l1:
+            sum += 100
+            print("your score is: %d" % sum)
+            l1.remove(val)
+        else:
+            print("INVALID")
+    print(" ")
+    print("FINAL SCORE:%d" % sum)
+    print("")
+    print("                                             S/L/E/D/U")
+    print("FOUR LETTER WORDS ONLY!")
+    sum1 = 0
+    for i in range(3):
+        val1 = str(input("enter ur word: "))
+        if val1 in l2:
+            sum1 += 200
+            print("your score is: %d" % sum1)
+            l2.remove(val1)
+        else:
+            print("INVALID")
+    print(" ")
+    print("FINAL SCORE:%d" % sum1)
+    print("")
+    print("                                             S/L/E/D/U")
+    print("FIVE LETTER WORDS ONLY!")
+    sum2 = 0
+    for i in range(3):
+        val2 = str(input("enter ur word: "))
+        if val2 in l3:
+            sum2 += 400
+            print("your score is: %d" % sum2)
+            l3.remove(val2)
+        else:
+            print("INVALID")
+    print(" ")
+    print("FINAL SCORE:%d" % sum2)
+    sum3 = sum + sum1 + sum2
+
+    print("                               FINAL SCORE FOR PLAYER1: %d" % sum3)
+    print(" ")
+    print("                                              PLAYER 2")
+    print("                                             S/L/E/D/U")
+    sum4 = 0
+    print("THREE LETTER WORDS ONLY!")
+    for i in range(3):
+        val3 = str(input("enter ur word: "))
+        if val3 in l1:
+            sum4 += 100
+            print("your score is: %d" % sum4)
+            l1.remove(val3)
+        else:
+            print("INVALID OR ALREADY USED BY PLAYER 1")
+    print(" ")
+    print("FINAL SCORE:%d" % sum4)
+    print("")
+    print("                                             S/L/E/D/U")
+    print("FOUR LETTER WORDS ONLY!")
+    sum5 = 0
+    for i in range(3):
+        val4 = str(input("enter ur word: "))
+        if val4 in l2:
+            sum5 += 200
+            print("your score is: %d" % sum5)
+            l2.remove(val4)
+        else:
+            print("INVALID OR ALREADY USED BY PLAYER 1")
+    print(" ")
+    print("FINAL SCORE:%d" % sum5)
+    print("")
+    print("                                             S/L/E/D/U")
+    print("FIVE LETTER WORDS ONLY!")
+    sum6 = 0
+    for i in range(2):
+        val5 = str(input("enter ur word: "))
+        if val5 in l3:
+            sum6 += 400
+            print("your score is: %d" % sum6)
+            l3.remove(val5)
+        else:
+            print("INVALID OR ALREADY USED BY PLAYER 1")
+    print(" ")
+    print("FINAL SCORE:%d" % sum6)
+    sum7 = sum5 + sum6 + sum4
+
+    print("                               FINAL SCORE FOR PLAYER1: %d" % sum7)
 elif cho=='medium': 
     print("yes2")
 elif cho=='MEDIUM':
